@@ -13,7 +13,6 @@ mkdir -p /usr/local/minio/{data,bin,etc}
 
 cd /usr/local/minio/bin && wget https://dl.min.io/server/minio/release/linux-ppc64le/minio
 chmod +x minio
-#开启9000端口
 
 ```
 
@@ -23,7 +22,7 @@ chmod +x minio
 #minio配置文件:
 #vi /usr/local/minio/etc/minio.conf
 MINIO_VOLUMES="/usr/local/minio/data"
-MINIO_OPTS="--address :9000"
+MINIO_OPTS="--address :9000" #开启9000端口
 MINIO_ACCESS_KEY="PcII664xXF3XB0S0"
 MINIO_SECRET_KEY="bvq3d0CZtPKJXZfjgjnMUMRk5P"
 #开启systemctl服务
